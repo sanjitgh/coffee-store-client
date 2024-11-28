@@ -2,7 +2,6 @@ import Swal from 'sweetalert2'
 const AddCoffee = () => {
   const handelSubmit = (event) => {
     event.preventDefault();
-    console.log("object");
 
     const form = event.target;
     const name = form.name.value;
@@ -22,7 +21,6 @@ const AddCoffee = () => {
       details,
       image,
     };
-    console.log(newCoffee);
 
     // send data to the server
     fetch('http://localhost:5000/coffee', {

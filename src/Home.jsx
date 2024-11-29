@@ -2,7 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import CoffeeCard from "./components/CoffeeCard";
 import { useState } from "react";
 
-function App() {
+function Home() {
   const lodededCoffee = useLoaderData();
   const [coffees, setCoffees] = useState(lodededCoffee);
 
@@ -27,4 +27,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
